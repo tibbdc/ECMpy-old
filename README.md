@@ -13,7 +13,7 @@ The packages I used to run the code in the pipeline was listed in requirements .
 $ conda install --file requirements.txt
 ```
 
-To create a stand-alone enviroments named  ECM with Python 3.5 and all the reqiured package versions, run the following:
+To create a stand-alone environment named  ECM with Python 3.5 and all the reqiured package versions(especially for cobra, the latest version 0.17.1 is also available), run the following:
 
 ```shell
 $ conda create -n ECM python=3.5 --file requirements.txt
