@@ -7,16 +7,18 @@ The pipeline was written and tested with Python 3.5, though Python versions (Pyt
 
 ## Software
 
-The packages I used to run the code in the pipeline was listed in requirements .txt. To install the requirements using conda, run the following at command-line:
+The packages I used to run the code in the pipeline was listed in requirements .txt. To install the requirements using pip, run the following at command-line:
 
 ```shell
-$ conda install --file requirements.txt
+$ pip install -r requirements.txt
 ```
 
-To create a stand-alone environment named  ECM with Python 3.5 and all the reqiured package versions(especially for cobra, the latest version 0.17.1 is also available), run the following:
+To create a stand-alone environment named  ECM with Python 3.5 and all the reqiured package versions, run the following:
 
 ```shell
-$ conda create -n ECM python=3.5 --file requirements.txt
+$ conda create -n ECM python=3.5 
+$ source activate ECM
+$ pip install -r requirements.txt
 ```
 
   You can read more about using conda environments in the [Managing Environments](http://conda.pydata.org/docs/using/envs.html) section of the conda documentation. 
